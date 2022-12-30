@@ -15,12 +15,15 @@ html{
     scroll-behavior: smooth;
 }
 
-.headerStyle {
+body {
     background-image: url("../img/cleo-topper.jpg");
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.headerStyle {
+    height: 100vh;
     display: flex;
     justify-content: right;
     padding: 20px 40px;
@@ -60,4 +63,10 @@ html{
     position: absolute;
     bottom: 20vh;
     left: 17vh;
+}
+
+/* main first section */
+
+.textAboutJourney {
+    height: 100vh;
 }
