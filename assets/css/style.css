@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+/* ============== GLOBAL STYLES ================== */
 
 @font-face {
     font-family: 'tangerine';
@@ -8,6 +8,11 @@
 @font-face {
     font-family: 'roboto';
     src: url("../fonts/RobotoSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'santio';
+    src: url("../fonts/Santio\ Bold.ttf");
 }
 
 *{
@@ -25,14 +30,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+    width: fit-content;
 }
 
+
+/* ============== Header + Introduction ================== */
 .headerStyle {
     height: 100vh;
     display: flex;
     justify-content: right;
     padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .heartPosition {
@@ -45,6 +54,7 @@ body {
     font-size: large;
     text-decoration: underline;    
     text-decoration-color: rgb(216, 169, 31);
+    text-underline-offset: 8px ;
     padding-left: 20px;
 }
 
@@ -58,9 +68,8 @@ body {
     left: 10vw;
     color: rgb(236, 236, 236);
     font-size: 3.5rem;
-    font-family: "roboto";
-    width: 25vw;
-    word-wrap: break-word;
+    font-family: "santio";
+    width: 17.5vw;
 }
 
 .styleScrollText {
@@ -69,13 +78,20 @@ body {
     font-size: 2.1rem;
     position: absolute;
     bottom: 20vh;
-    left: 17vh;
+    left: 18vh;
 }
 
-/* main first section */
+.arrowStyle {
+    font-family: arial;
+    font-size: 1.2rem;
+    padding-left: 1vw;
+    font-style: italic;
+}
+
+/* ============== Main First Section ================== */
 
 main {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -86,7 +102,7 @@ main {
 
 .textAboutJourney p {
     color: #6bc1a3;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     line-height: 2.8rem;
     font-family: "roboto";
@@ -96,10 +112,160 @@ main {
     position: absolute;
     left: 13vw;
     top: 25vh;
-    width: 55vw;
+    width: 61vw;
 }
 
 .changeColor {
     color: #fff;
     background-color: #000;
+}
+
+/* ============== Facts First Area ================== */
+
+.firstArea {
+    height: 100vh;
+}
+
+.peopleIcon {
+    padding: 12vh 12vh;
+}
+
+.firstFact {
+    padding: 17vh 7vw;
+    line-height: 5.0rem;
+}
+
+.firstFact p:nth-child(1) {
+    font-size: 8rem;
+    color: #e7bc0e ;
+    font-family: "santio";
+}
+
+.firstFact p:nth-child(2) {
+    color: #e7bc0e;
+    font-family: "santio";
+    font-size: xx-large;
+}
+
+/* ============== Facts Second Area ================== */
+
+.secondArea {
+    height: 180vh;
+}
+
+.donateIcon {
+padding: 7vh 7vw;
+}
+
+.secondArea p:nth-of-type(2) {
+    font-size: 7.5rem;
+    color: #cb91b6;
+    font-family: "santio";
+}
+
+.secondArea p:nth-of-type(1) {
+    color: #cb91b6;
+    font-family: "santio";
+    font-size: xx-large;
+}
+
+.secondFact {
+    padding-left: 7vw;
+    line-height: 5.0rem;
+}
+
+/* ============== Facts Second Area Part 2 ================== */
+
+.healthIcon {
+    padding: 20vh 7vw;
+}
+
+.thirdFact p:nth-of-type(1) {
+    font-size: 7.5rem;
+    color: #6bc1a3;
+    font-family: "santio";
+}
+
+.thirdFact p:nth-of-type(2) {
+    font-family: "santio";
+    font-size: xx-large;
+    color: #6bc1a3;
+}
+
+.thirdFact {
+    padding-left: 7vw;
+    line-height: 5.0rem;
+}
+
+.textDomesticWorkers {
+    padding-top: 18vh;
+    padding-left: 27vw;
+}
+
+.textDomesticWorkers p:nth-of-type(1){
+    width: 67vw;
+    color: #7eb8e1;
+}
+
+/* ============== Third Area Familie IMG ================== */
+
+.thirdArea {
+   background-image: url("../img/see.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: #efefef;
+   background-size: cover;
+}
+
+.familieIMG img {
+   height: 140vh;
+   width: 100vw;
+   vertical-align: bottom;
+}
+
+/* ============== Footer Black Backround ================== */
+
+.footerBlack {
+    height: 111vh;
+    background-color: #000;
+}
+
+.footerBlack p {
+        color: rgb(236, 236, 236);
+        font-size: 5rem;
+        font-family: "santio";
+        width: 50vw;
+        padding-top: 30vh;
+        padding-left: 5vw;
+}
+
+.donateBotton a {
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    font-size: x-large;
+    border: 1px solid whitesmoke;
+    padding: 1.2vh 2vw;
+}
+
+.donateBotton {
+    padding-top: 6vh;
+    padding-left: 5vw;
+}
+
+.donateBotton:hover a {
+    box-shadow: 0.5vh 0.5vh 0 0 white;
+}
+
+.linkRoma {
+    padding-left: 33vw;
+}
+
+.linkRoma p {
+    font-size: large;
+    color: #efefef;
+}
+
+.linkRoma a {
+    color: #6bc1a3 ;
+    text-decoration: none;   
 }
