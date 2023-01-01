@@ -153,7 +153,7 @@ main {
 }
 
 .donateIcon {
-padding: 7vh 7vw;
+    padding: 7vh 7vw;
 }
 
 .secondArea p:nth-of-type(2) {
@@ -270,11 +270,16 @@ padding: 7vh 7vw;
 }
 
 
-/* ============== Extra Large ================== */
+/* ============== Responsiveness Extra Large ================== */
 
-@media (min-width: 1500px) {
+@media only screen and (min-width: 1500px) {
     .introductoryText {
-        width:13vw;
+        font-size: 6.5rem;
+        width: 24.5vw;
+    }
+
+    .styleScrollText {
+        font-size: 3.1rem; 
     }
 
     .heartPosition {
@@ -286,12 +291,24 @@ padding: 7vh 7vw;
         left: 10vw;
     }
 
+    .textAboutJourney p {     
+        font-size: 1.9rem;
+       
+    }
+
     .textJourneyStyle {
-        width: 45.5vw;
+        left: 10vw;
+        width: 55vw;
+    }
+
+    .textDomesticWorkers {
+        padding-top: 18vh;
+        padding-left: 37vw;
+        line-height: 2.8rem;
     }
 
     .textDomesticWorkers p:nth-of-type(1){
-        width: 50vw;
+        width: 55.3vw;
     }
     
     .footerBlack p {
@@ -308,4 +325,102 @@ padding: 7vh 7vw;
     .footerBlack {
         height: 113vh;
     }
+}
+
+/* ============== Responsiveness Small Devices ================== */
+
+@media only screen and (max-width: 450px) {
+
+    body {
+        width: fit-content;
+    }
+
+    .headerStyle p:nth-child(2){
+        padding-right: 6vw;
+    }
+
+    .introductoryText {
+    
+        left: 5vw;
+        font-size: 3rem;
+        width: 55vw;
+    }
+
+    .styleScrollText {
+        font-size: 1.9rem;
+        bottom: 25vh;
+        left: 5vw;
+    }
+
+    .textJourneyStyle {
+        position: absolute;
+        left: 5vw;
+        top: 5vh;
+        width: 90vw;
+    }
+
+    .textAboutJourney p {
+        font-size: 1.2rem;
+        line-height: 2.5rem;   
+    }
+
+    .peopleIcon {
+        padding: 6vh 8vh;
+    }
+
+    .firstFact p:nth-child(1) {
+        font-size: 5.5rem;
+    }
+
+    .secondArea p:nth-of-type(2) {
+        font-size: 5.5rem;
+    }
+
+    .thirdFact p:nth-of-type(1) {
+        font-size: 5.5rem;
+    }
+
+    .thirdFact p:nth-of-type(2) {
+        font-family: "santio";
+        font-size: x-large;
+    }
+
+    .textDomesticWorkers {
+        padding-top: 16vh;
+        padding-left: 2.5vw;
+        text-align: left;
+        line-height: 2.2rem;
+    }
+    
+    .textDomesticWorkers p:nth-of-type(1){
+        width: 90vw;
+        letter-spacing: 0.15rem;
+        word-spacing: 0.1rem;
+        font-size: 1.5rem;
+    }
+
+    .secondArea {
+        height: 242vh;
+    }
+
+    .footerBlack {
+        height: 113vh;
+    }
+
+    .footerBlack p {
+        font-size: 3rem;
+        width: 90vw;
+        padding-top: 25vh;
+        padding-left: 3vw;
+    }
+
+    .linkRoma {
+        padding-left: 20vw;
+        padding-top: 14vh;
+    }
+    
+    .linkRoma p {
+        font-size: medium;
+        color: #efefef;
+    }  
 }
